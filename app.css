@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 13px;
+    padding: 0;
+}
+
+html {
+    background-color: hsl(0, 0%, 95%);
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    line-height: 150%
+}
+
+main {
+    width: 80%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0px;
+}
+
+img {
+    max-width: 64px;
+    max-height: 40px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+button {
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    border-color: hsl(0, 0%, 95%);
+    border-style: solid;
+    background-color: hsl(0, 0%, 95%);
+    width: 138px;
+}
+
+.sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+button:active {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%)
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 8px 0px 0px;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 0px 8px 8px;
+}
+
+footer {
+    display: flex;
+    color: black;
+    align-self: center;
+    margin: 0px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    margin: 0px;
+}
+
+@media (min-width: 900px) {
+    main {
+        flex-direction: row;
+    }
+
+    section {
+        min-height: 450px;
+    }
+
+    .sedan {
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    .luxury {
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: -10px;
+    }
+}
